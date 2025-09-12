@@ -205,14 +205,22 @@ body::after {
     border: 1px solid rgba(200, 200, 200, 0.3);
 }
 
-/* スマートフォン専用改行 */
+/* デスクトップ・スマートフォン別改行 */
 .mobile-br {
     display: none;
+}
+
+.desktop-br {
+    display: inline;
 }
 
 @media (max-width: 768px) {
     .mobile-br {
         display: inline;
+    }
+    
+    .desktop-br {
+        display: none;
     }
     
     .question-title {
@@ -228,6 +236,13 @@ body::after {
         transform: none !important;
         white-space: normal !important;
     }
+}
+
+/* デスクトップでQ3の質問文を改行表示 */
+#section3 .question-title {
+    white-space: normal !important;
+    transform: none !important;
+    line-height: 1.5;
 }
 
 /* 質問番号表示 */
