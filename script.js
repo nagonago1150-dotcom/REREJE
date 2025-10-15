@@ -1,6 +1,28 @@
 let currentQuestion = 1;
 const answers = {};
-const redirectUrl = 'https://www.wellbest.jp/Landing/Formlp/rereje_drta_amgif_fr_2509com_up_after_instant.aspx';
+
+// 派生URLごとの販売リンク設定（/1 ~ /9）
+const salesLinks = {
+    '/1': 'https://sf-system.jp/link.php?i=pi5qxm6hzd2y&m=mi41ruivpeep',
+    '/2': 'https://sf-system.jp/link.php?i=pi5qxm6hzd2y&m=mi41q3pp22zj',
+    '/3': 'https://sf-system.jp/link.php?i=pi5qxm6hzd2y&m=mi41q33f45o4',
+    '/4': 'https://sf-system.jp/link.php?i=pi5qxm6hzd2y&m=mi44h49yhgux',
+    '/5': 'https://sf-system.jp/link.php?i=pi5qxm6hzd2y&m=mi41qhnrzmng',
+    '/6': 'https://sf-system.jp/link.php?i=pi5qxm6hzd2y&m=mi41q1o5alqr',
+    '/7': 'https://sf-system.jp/link.php?i=pi5qxm6hzd2y&m=mi4e9lzv5vxl',
+    '/8': 'https://sf-system.jp/link.php?i=pi5qxm6hzd2y&m=mi41q7rhww52',
+    '/9': 'https://sf-system.jp/link.php?i=pi5qxm6hzd2y&m=mi41q4mbpxi9'
+};
+
+// 現在のパスを取得し、対応する販売リンクを決定
+const currentPath = window.location.pathname;
+const redirectUrl = salesLinks[currentPath] || 'https://www.wellbest.jp/Landing/Formlp/rereje_drta_amgif_fr_2509com_up_after_instant.aspx';
+
+// デバッグログ（開発者ツールで確認可能）
+console.log('=== リダイレクト情報 ===');
+console.log('現在のパス:', currentPath);
+console.log('遷移先URL:', redirectUrl);
+console.log('=====================');
 
 // カスタムカーソルの初期化
 function initCursor() {
