@@ -331,6 +331,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // パーティクルエフェクト（背景）
     createParticles();
+
+    // ヒーロー画像クリック時のリダイレクト
+    const heroImage = document.querySelector('.hero-image');
+    if (heroImage) {
+        heroImage.style.cursor = 'pointer';
+        heroImage.addEventListener('click', function() {
+            console.log('画像クリック - リダイレクト先:', redirectUrl);
+            window.location.href = redirectUrl;
+        });
+    }
 });
 
 function createParticles() {
