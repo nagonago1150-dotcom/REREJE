@@ -1,7 +1,7 @@
 let currentQuestion = 1;
 const answers = {};
 
-// 派生URLごとの販売リンク設定（/1 ~ /9）
+// 派生URLごとの販売リンク設定（/1 ~ /10）
 const salesLinks = {
     '/1': 'https://sf-system.jp/link.php?i=pi5qxm6hzd2y&m=mi41ruivpeep',
     '/2': 'https://sf-system.jp/link.php?i=pi5qxm6hzd2y&m=mi41q3pp22zj',
@@ -11,7 +11,8 @@ const salesLinks = {
     '/6': 'https://sf-system.jp/link.php?i=pi5qxm6hzd2y&m=mi41q1o5alqr',
     '/7': 'https://sf-system.jp/link.php?i=pi5qxm6hzd2y&m=mi4e9lzv5vxl',
     '/8': 'https://sf-system.jp/link.php?i=pi5qxm6hzd2y&m=mi41q7rhww52',
-    '/9': 'https://sf-system.jp/link.php?i=pi5qxm6hzd2y&m=mi41q4mbpxi9'
+    '/9': 'https://sf-system.jp/link.php?i=pi5qxm6hzd2y&m=mi41q4mbpxi9',
+    '/10': 'https://sf-system.jp/link.php?i=pi5qxm6hzd2y&m=mi41q28cb1ef'
 };
 
 // 現在のパスを取得し、対応する販売リンクを決定
