@@ -10,6 +10,7 @@
     { "source": "/6", "destination": "/index.html" },
     { "source": "/7", "destination": "/index.html" },
     { "source": "/8", "destination": "/index.html" },
-    { "source": "/9", "destination": "/index.html" }
+    { "source": "/9", "destination": "/index.html" },
+    { "source": "/10", "destination": "/index.html" }
   ]
 }
